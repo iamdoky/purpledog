@@ -3,6 +3,6 @@
 
   
 ### 버전
-  java : 11
-  spring-boot : 2.6.5
-  gradle : 7.4.1
+java : 11
+spring-boot : 2.6.5
+gradle : 7.4.1
