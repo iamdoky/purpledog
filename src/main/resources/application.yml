@@ -1,0 +1,12 @@
+---
+
+spring:
+  profiles:
+    active: local
+    group:
+      local:
+        - common
+        - mariadb
+        - logging-console
+
+...
