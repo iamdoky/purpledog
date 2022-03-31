@@ -29,6 +29,8 @@ public class MemberService {
 
     public Member memberCreate( MemberRequest request ) {
         Member member = new Member();
+        member.setMemberId(request.getMemberId());
+        member.setPassword(request.getPassword());
         return memberRepository.save( member );
     }
 
@@ -45,8 +47,8 @@ public class MemberService {
         return memberRepository.save(member);
     }
 
-    public void memberDelete( Long id ) {
-        memberRepository.deleteById( id );
+    public void memberDelete( String id ) {
+        memberRepository.deleteByMemberId( id );
     }
 
 

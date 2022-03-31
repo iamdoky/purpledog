@@ -41,4 +41,11 @@ public class MemberController {
         return ResponseEntity.ok( memberService.memberUpdate( memberId, request ));
     }
 
+    @DeleteMapping("/delete/{memberId}")
+    public ResponseEntity<Void> memberDelete (@PathVariable String memberId) {
+        memberService.memberDelete(memberId);
+        return ResponseEntity.ok().build();
+    }
+
+
 }
